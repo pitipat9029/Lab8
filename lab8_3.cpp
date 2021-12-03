@@ -2,7 +2,24 @@
 using namespace std;
 
 char before(char x){
-	//Write your function definition here
+	char y = x -1;
+		if ( x == 'A')
+		{
+			y = x +25 ;
+		}
+	if ( int(x) < 65 )  
+	{
+		int(x) = 48 ;
+		y = x ;
+		 
+	}
+	if(int(x) > 90 ){
+		int(x) = 48 ;
+		y = x ;
+		
+	}
+	
+	return y ;
 }
 
 int main(){
